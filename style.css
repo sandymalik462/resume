@@ -34,6 +34,33 @@ h1, h2, h3, h4 {
 .header-content {
     max-width: 1000px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.qr-code {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.qr-code img {
+    width: 80px;
+    height: 80px;
+}
+
+.qr-code span {
+    font-size: 0.6em;
+    color: #1f2937;
+    margin-top: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .header-text h1 {
