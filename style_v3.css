@@ -1,0 +1,166 @@
+:root {
+    --black: #1a1a1a;
+    --gray-dark: #4a4a4a;
+    --gray-light: #7a7a7a;
+    --white: #ffffff;
+    --bg-color: #ffffff;
+    --border-color: #000000;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 40px 0;
+    color: var(--black);
+    line-height: 1.5;
+}
+
+.resume-container {
+    max-width: 850px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 60px 80px;
+    box-shadow: 0 0 1px rgba(0,0,0,0.2);
+}
+
+/* Header */
+.minimal-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.minimal-header h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3em;
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--gray-dark);
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-bar, .link-bar {
+    font-size: 0.9em;
+    color: var(--gray-light);
+    margin-bottom: 5px;
+}
+
+.link-bar a {
+    color: var(--black);
+    text-decoration: underline;
+    margin: 0 10px;
+}
+
+/* Sections */
+.minimal-section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.skills-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skill-group {
+    font-size: 0.9em;
+}
+
+.skill-group strong {
+    font-weight: 700;
+}
+
+/* Experience */
+.exp-item {
+    margin-bottom: 30px;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.exp-subheader {
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+    color: var(--gray-dark);
+    margin-bottom: 10px;
+    font-size: 0.95em;
+}
+
+.exp-bullets {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.exp-bullets li {
+    margin-bottom: 5px;
+    font-size: 0.95em;
+}
+
+.minor-exp {
+    font-size: 0.85em;
+    color: var(--gray-dark);
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+/* Two Col */
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.simple-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.simple-list li {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.edu-minimal {
+    font-size: 0.9em;
+}
+
+.edu-minimal strong {
+    display: block;
+}
+
+@media print {
+    body {
+        background: none;
+        padding: 0;
+    }
+    .resume-container {
+        box-shadow: none;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+}

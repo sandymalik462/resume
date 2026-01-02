@@ -1,0 +1,244 @@
+:root {
+    --sidebar-bg: #2d3436;
+    --sidebar-text: #dfe6e9;
+    --main-bg: #ffffff;
+    --text-color: #2d3436;
+    --accent-color: #0984e3; /* Electric Blue */
+    --accent-light: #74b9ff;
+    --border-color: #ecf0f1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f6fa;
+    color: var(--text-color);
+}
+
+.resume-wrapper {
+    display: flex;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: var(--main-bg);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    min-height: 1000px; /* Force visual height */
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 32%;
+    background: var(--sidebar-bg);
+    color: var(--sidebar-text);
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.profile-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    line-height: 1;
+    margin: 0 0 10px 0;
+    color: #ffffff;
+}
+
+.profile-header .role {
+    font-size: 1em;
+    color: var(--accent-light);
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 0.9em;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item i {
+    width: 20px;
+    color: var(--accent-light);
+}
+
+.contact-item a {
+    color: var(--sidebar-text);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact-item a:hover {
+    color: #ffffff;
+}
+
+.sidebar-section h2 {
+    font-size: 1.1em;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-list li {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.edu-item {
+    margin-bottom: 15px;
+}
+
+.edu-item h3 {
+    margin: 0;
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.edu-item p {
+    margin: 2px 0;
+    font-size: 0.9em;
+    color: #b2bec3;
+}
+
+.edu-item .date {
+    font-size: 0.8em;
+    font-style: italic;
+    color: #636e72;
+}
+
+.sidebar-section h3 {
+    font-size: 0.9em;
+    margin: 15px 0 8px 0;
+    color: var(--accent-light);
+    text-transform: uppercase;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.tags span {
+    background: rgba(255,255,255,0.1);
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+}
+
+/* Main Content Styling */
+.main-content {
+    width: 68%;
+    padding: 50px;
+}
+
+.main-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6em;
+    color: var(--text-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.main-content h2 i {
+    color: var(--accent-color);
+    font-size: 0.7em;
+}
+
+#summary p {
+    font-size: 1.05em;
+    line-height: 1.7;
+    color: #636e72;
+    margin-bottom: 40px;
+}
+
+.job {
+    margin-bottom: 35px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.job h3 {
+    margin: 0;
+    font-size: 1.25em;
+    color: #2d3436;
+}
+
+.job-date {
+    font-size: 0.9em;
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.job h4 {
+    margin: 0 0 12px 0;
+    font-weight: 500;
+    color: #636e72;
+    font-size: 1em;
+}
+
+.job ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.job li {
+    margin-bottom: 8px;
+    color: #636e72;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+.older-roles h3 {
+    font-size: 1.1em;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #b2bec3;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .resume-wrapper {
+        flex-direction: column;
+        margin: 0;
+    }
+    .sidebar, .main-content {
+        width: 100%;
+        padding: 30px;
+    }
+    .job-header {
+        flex-direction: column;
+    }
+}
